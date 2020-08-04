@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "./Banner";
+import Navbar from "./Navbar";
 
 import Row from "./Row";
 import request from "./request";
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className="app">
       {/* navbar */}
-      {/* <Navbar />   */}
+      <Navbar />
       {/* banner */}
       <Banner />
       <Row
@@ -23,6 +24,7 @@ function App() {
       <Row title="Action Movies" fetchUrl={request.fetchActionMovies} />
       <Row title="Comedy Movies" fetchUrl={request.fetchComedyMovies} />
       <Row title="Horror Movies" fetchUrl={request.fetchHorrorMovies} />
+      <Row title="Fantasy Movies" fetchUrl={request.fetchFantasyMovies} />
       <Row title="Romance Movies" fetchUrl={request.fetchRomanceMovies} />
       <Row title="Documentaries" fetchUrl={request.fetchDocumentaries} />
     </div>
